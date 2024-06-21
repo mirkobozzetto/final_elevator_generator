@@ -5,10 +5,6 @@ import { FileChangeEvent, ImageState } from "@/types/types";
 import { handleFileChange } from "@/utils/handleFileChange";
 import { useState } from "react";
 
-const handleFileChangeWrapper = (e: FileChangeEvent) => {
-  handleFileChange(e, setImage);
-};
-
 export default function Home() {
   const [image, setImage] = useState<ImageState | undefined>(undefined);
 
