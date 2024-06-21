@@ -2,7 +2,7 @@ import satori from "satori";
 import { ImageGenerator } from "./ImageGenerator";
 
 interface RenderPNGParams {
-  image: { width: number };
+  image: { width: number; src: string | undefined };
   settings: { padding: number; shadow: number; radius: number };
 }
 

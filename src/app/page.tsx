@@ -129,8 +129,8 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col flex-1 justify-center items-center gap-4 m-auto w-full max-w-lg">
-        <div className="border rounded-md w-full h-fit">
-          <ImageGenerator settings={settings} image={image} />
+        <div className="border rounded-md w-full h-96 overflow-hidden">
+          {image && <ImageGenerator settings={settings} image={image} />}
         </div>
         <div className="flex items-center gap-2">
           <button
